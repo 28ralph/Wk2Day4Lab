@@ -17,7 +17,7 @@
 //     else {
 //         console.log("Bad grade but you'll get em next time")
 //     }
-    
+
 // }
 
 // grade(67)
@@ -48,41 +48,46 @@
 
 //Assignment 4
 
-// function denominations(change){
-//     let twenty = 0
-//     let ten = 0
-//     let five = 0
-//     let one = 0
+function denominations(bill, amountPaid) {
+    let hundred = 0
+    let twenty = 0
+    let ten = 0
+    let five = 0
+    let one = 0
+    let change = amountPaid - bill
+    
+    hundred = change/ 100
+    change = change % 100
+    
+    twenty = change / 20
+    change = change % 20
 
-//     twenty = change / 20
-//     change = change % 20
+    ten = change / 10
+    change = change % 10
 
-//     ten = change / 10
-//     change = change % 10
+    five = change / 5
+    change = change % 5
 
-//     five = change/5
-//     change = change % 5
+    one = change
 
-//     one = change
+    console.log("Hundred: " + parseInt(hundred) + " Twenty: " + parseInt(twenty) + " Ten: " + parseInt(ten) + " Five: " + parseInt(five) + " One: " + parseInt(one))
 
-//     console.log("Twenty: " + parseInt(twenty) + " Ten: " + parseInt(ten) + " Five: " + parseInt(five) + " One: " + parseInt(one))
-
-// }
-// denominations(101)
+}
+denominations(12, 120)
 
 //Assignment 5
 
-for(let i =1; i <= 100; i++){
-    if (i % 3 == 0 && i % 5 == 0){
-        console.log("FizzBuzz")
-    }
-    else if (i % 3 == 0){
-        console.log("Fizz")
-    }
-    else if (i % 5 == 0 && i % 3 != 0){
-        console.log("Buzz")
-    }
-    else {
-        console.log(i)
-    }
-}
+// for(let i =1; i <= 100; i++){
+//     if (i % 3 == 0 && i % 5 == 0){
+//         console.log("FizzBuzz")
+//     }
+//     else if (i % 3 == 0){
+//         console.log("Fizz")
+//     }
+//     else if (i % 5 == 0 && i % 3 != 0){
+//         console.log("Buzz")
+//     }
+//     else {
+//         console.log(i)
+//     }
+// }
